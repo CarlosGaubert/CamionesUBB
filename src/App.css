@@ -1,0 +1,77 @@
+.page-container {
+  padding: 24px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-gradient-primary {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+}
+
+.card-gradient-emerald {
+  background: linear-gradient(135deg, #047857 0%, #10b981 100%);
+  color: white;
+}
+
+.card-gradient-amber {
+  background: linear-gradient(135deg, #b45309 0%, #f59e0b 100%);
+  color: white;
+}
+
+.card-gradient-purple {
+  background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%);
+  color: white;
+}
+
+.stat-card {
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+}
+
+.badge-status {
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge-status-warning {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge-status-danger {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-status-success {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.section-header {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 16px;
+}
