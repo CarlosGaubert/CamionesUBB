@@ -9,6 +9,8 @@ Sistema web integral para la administración, monitoreo y control operativo de f
 ![Theme](https://img.shields.io/badge/Theme-Light%20%2F%20Dark-orange?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
 
+> 📦 **Proyecto Completo:** Este repositorio contiene el **Frontend (Cliente Web React)** del sistema *Camiones UBB*. La API REST y la lógica del servidor se encuentran en el repositorio hermano: [**ServidorCamionesUBB (Backend)**](https://github.com/CarlosGaubert/ServidorCamionesUBB).
+
 ---
 
 ## 📋 Tabla de Contenidos
@@ -165,11 +167,16 @@ La aplicación se abrirá automáticamente en tu navegador en:
 
 ## 🔌 Conexión con el Backend (API)
 
+La aplicación consume la API REST provista por el repositorio del servidor:
+* **Repositorio Backend:** [ServidorCamionesUBB](https://github.com/CarlosGaubert/ServidorCamionesUBB)
+* **Tecnología Backend:** Node.js + Express + Sequelize + MySQL
+* **Documentación de Endpoints:** `http://localhost:4000/api/docs` (Swagger UI)
+
 La aplicación tiene configurado un proxy en `package.json`:
 ```json
 "proxy": "http://localhost:4000"
 ```
-Para que las peticiones a la base de datos y endpoints `/api/...` respondan con datos reales, asegúrate de tener ejecutándose la API correspondiente en el puerto `4000`. Si el backend está apagado, la aplicación continuará funcionando y mostrará las interfaces de manera segura con estados de carga/espera.
+Para que las peticiones a la base de datos y endpoints `/api/...` respondan con datos reales, asegúrate de tener ejecutándose la API en el puerto `4000`. Si el backend está apagado, la aplicación continuará funcionando y mostrará las interfaces de manera segura con estados de carga/espera.
 
 ---
 
